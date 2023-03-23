@@ -1,0 +1,78 @@
+:root{
+    --login_card-color : #fff;
+    --background_color:linear-gradient(92deg, #04366b, #0371a3) ;
+    --Textcolor_primary: rgb(3, 14, 24) ;
+    --login_font_style: Arial, Helvetica, sans-serif;
+    --link_color : rgb(14, 82, 209);
+}
+
+Body{
+    padding: 40px 0 0 0;
+    background: var(--background_color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.singup_card{
+    padding: 16px 0;
+    border: 1px solid var(--login_card-color);
+    background-color: var(--login_card-color);
+    width: 450px;
+    height: 590px;
+    border-radius: 12px;
+    line-height: 75px;
+    font-size: 38px;
+    font-family: var(--login_font_style);
+    transition:all .5s ease-in-out;
+
+}
+.singup_titel{
+    border-bottom: 1px solid #adadad;
+}
+.form_handel{
+    border: none;
+    border-bottom: 1px solid #01162c;
+    border-radius: 11px;
+    width: 350px;
+    height: 30px;
+    transition:all .5s ease-in-out;
+    color: #0371a3;
+    font-size: 17px;
+}
+select{
+    text-align: center;
+    border: 2px solid #adadad ;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 130px;
+    height: 45px;
+    color: #0371a3;
+}
+.Btn_SingUp{
+    padding: 5px;
+    border:1px solid #04366b;
+    border-radius: 11px;
+    font-size: 20px;
+    width: 290px;
+    height: 40px;
+    color: #fff;
+    background-color: #0371a3;
+    box-shadow: 0px  1px 0px #777,
+                0px 25px 0px  #777
+                0px  50px 0px #777
+                0px 100px 0px #777;
+    transition: all .6s ease-in-out ;
+            }
+.Btn_SingUp:hover{
+    cursor: pointer;
+    border: 1px solid #0371a3;
+    color: #0371a3;
+    background-color: transparent;
+
+}
+::-webkit-file-upload-button{
+    border: 1px solid var(--Textcolor_primary);
+    background: gray;
+    color: var(--Textcolor_primary);
+}

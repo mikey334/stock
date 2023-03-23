@@ -1,0 +1,239 @@
+:root{
+    --login_card-color : #fff;
+    --background_color:linear-gradient(92deg, #04366b, #0371a3) ;
+    --Textcolor_primary: rgb(3, 14, 24) ;
+    --login_font_style: Arial, Helvetica, sans-serif;
+    --link_color : rgb(14, 82, 209);
+    --texterror:rgb(243, 35, 35);
+        --bs-blue: #0d6efd;
+        --bs-indigo: #6610f2;
+        --bs-purple: #6f42c1;
+        --bs-pink: #d63384;
+        --bs-red: #dc3545;
+        --bs-orange: #fd7e14;
+        --bs-yellow: #ffc107;
+        --bs-green: #198754;
+        --bs-teal: #20c997;
+        --bs-cyan: #0dcaf0;
+        --bs-black: #000;
+        --bs-white: #fff;
+        --bs-gray: #6c757d;
+        --bs-gray-dark: #343a40;
+        --bs-gray-100: #f8f9fa;
+        --bs-gray-200: #e9ecef;
+        --bs-gray-300: #dee2e6;
+        --bs-gray-400: #ced4da;
+        --bs-gray-500: #adb5bd;
+        --bs-gray-600: #6c757d;
+        --bs-gray-700: #495057;
+        --bs-gray-800: #343a40;
+        --bs-gray-900: #212529;
+        --bs-primary: #0d6efd;
+        --bs-secondary: #6c757d;
+        --bs-success: #198754;
+        --bs-info: #0dcaf0;
+        --bs-warning: #ffc107;
+        --bs-danger: #dc3545;
+        --bs-light: #f8f9fa;
+        --bs-dark: #212529;
+        --bs-primary-rgb: 13, 110, 253;
+        --bs-secondary-rgb: 108, 117, 125;
+        --bs-success-rgb: 25, 135, 84;
+        --bs-info-rgb: 13, 202, 240;
+        --bs-warning-rgb: 255, 193, 7;
+        --bs-danger-rgb: 220, 53, 69;
+        --bs-light-rgb: 248, 249, 250;
+        --bs-dark-rgb: 33, 37, 41;
+        --bs-white-rgb: 255, 255, 255;
+        --bs-black-rgb: 0, 0, 0;
+        --bs-body-color-rgb: 33, 37, 41;
+        --bs-body-bg-rgb: 255, 255, 255;
+        --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+        --bs-body-font-family: var(--bs-font-sans-serif);
+        --bs-body-font-size: 1rem;
+        --bs-body-font-weight: 400;
+        --bs-body-line-height: 1.5;
+        --bs-body-color: #212529;
+        --bs-body-bg: #fff;
+        --bs-border-width: 1px;
+        --bs-border-style: solid;
+        --bs-border-color: #dee2e6;
+        --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+        --bs-border-radius: 0.375rem;
+        --bs-border-radius-sm: 0.25rem;
+        --bs-border-radius-lg: 0.5rem;
+        --bs-border-radius-xl: 1rem;
+        --bs-border-radius-2xl: 2rem;
+        --bs-border-radius-pill: 50rem;
+        --bs-link-color: #0d6efd;
+        --bs-link-hover-color: #0a58ca;
+        --bs-code-color: #d63384;
+        --bs-highlight-bg: #fff3cd;
+    
+}
+Body{
+    padding: 45px 0 0 0;
+    background: var(--background_color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+.login-card{
+    padding: 35px;
+   
+    border: 1px solid var(--login_card-color);
+    background-color: var(--login_card-color);
+    height: 399px;
+    width: 400px;
+    border-radius: 9px;
+    color: var(--Textcolor_primary) ;
+    font-size: 35px;
+    font-family: var(--login_font_style);
+    filter: drop-shadow(5px 5px 15px rgb(29, 29, 29));
+}
+.login-card.Disable{
+    display: none;
+}
+
+.form_control{
+    border: none;
+    border-bottom: 1px solid var(--Textcolor_primary);
+    width: 350px;
+    height: 29px;
+    line-height: 15px;
+    font-size: 16px;
+}
+.form_control::grammar-error{
+    border-bottom: 1px solid var(--texterror);
+
+}
+.login-body-text{
+    text-align: left;
+    font-size: 15px;
+}
+
+.btn_login{
+  
+    width: 310px;
+    height: 42px;
+    border:none ;
+    border-radius: 12px;
+    font-size: 20px;
+    color: var(--login_card-color);
+    background-color: #0371a3;
+    box-shadow: 0px  1px 0px #777,
+                0px 25px 0px  #777
+                0px  50px 0px #777
+                0px 100px 0px #777;
+    transition: all .4s ease-in-out ;
+            }
+
+.btn_login:hover{
+    cursor: pointer;
+    outline: 4px solid #031e3a;
+    outline-offset: 2px;
+    
+}
+.login-body-text a{
+    color: var(--link_color);
+    font-size: 17px;
+    text-decoration: none;
+}
+.login-body-text a{
+    text-decoration: underline;
+}
+.login-card-transit{
+    display: none;
+    visibility: hidden;
+}
+.login-card-transit.display{
+    display: block;
+
+}
+
+.Next button{
+    border: 1px solid #031e3a;
+    position: fixed;
+    right: 0;
+    background-color: transparent;
+   border-radius: 50%;
+}
+.pre button{
+    border: 1px solid #031e3a;
+    position: fixed;
+    left: 0;
+    background-color: transparent;
+   border-radius: 50%;
+}
+button.btnsend{
+    border: 1px solid rgb(20, 95, 180);
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgb(20, 95, 180);
+    width: fit-content;
+    height: 39px;
+    filter: drop-shadow(3px 3px 2px black);
+    cursor: pointer;
+}
+.loginoption{
+display: none;
+transition: all .8s ease-in-out;
+opacity: .2;
+}
+.loginoption.active{
+display: flex;
+border: 1px solid #999;
+background-color: rgb(8, 0, 0);
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+width: 99%;
+height: 99%;
+flex-direction: row;
+line-height: 50px;
+background: linear-gradient(45deg , rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.692));
+transition: all 2s ease-in-out;
+opacity: 1;
+}
+.loginoption.active .list{
+    border: 1px solid transparent;
+    display: flex;
+    flex-flow: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    transition: all .8s ease-in-out;
+}
+.loginoption.active .a{
+    display: flex;
+    flex-direction: row;
+   border: 1px solid #fff;
+   border-radius: 4px;
+   width: 125px;
+   height: fit-content;
+   transition: transform .3s ease-in-out,
+               filter .5s ease-in-out;
+}
+.loginoption.active .list .a:hover{
+    filter: drop-shadow(1px 4px 25px whitesmoke);
+  transform: scale(110% ,110%);
+
+}
+.loginoption a{
+    padding: 5px;
+color: #fff;
+height: auto;
+text-decoration: none;
+font-size: 20px;
+transition: all .8s ease-in-out;
+}
+.loginoption a:hover{
+text-decoration: underline;
+transition: all .8s ease-in-out;
+}
